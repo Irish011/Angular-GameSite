@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project-Sidebar';
+
+  logo:string="assets/images/angularr.png";
+
+  isSideOpen = false;
+  hover = false;
+  contentMargin=240;
+  trans=.8;
+
+  onToolbarToogle() {
+    
+    this.isSideOpen=!this.isSideOpen;
+     /*if(this.isSideOpen){
+      this.contentMargin=240;
+    }else{
+      this.contentMargin=70;
+    } */
+    /*if(this.isSideOpen){
+      this.hover=!this.hover
+    }*/
+    this.contentMargin=240;
+  }
 }
