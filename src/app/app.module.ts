@@ -14,6 +14,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { OverviewComponent } from './overview/overview.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
+import { GamesComponent } from './games/games.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component';
     MainContentComponent,
     OverviewComponent,
     EventsComponent,
-    AboutComponent
+    AboutComponent,
+    GamesComponent
    
   ],
   imports: [

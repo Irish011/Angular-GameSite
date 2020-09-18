@@ -4,9 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
+import { GamesComponent } from './games/games.component';
 
 
 const routes: Routes = [
+  {
+    path:'games',
+    component:GamesComponent
+  },
   {
   path:'home',
   component:HomeComponent
