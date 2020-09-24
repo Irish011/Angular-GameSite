@@ -22,7 +22,7 @@
     </mat-card-header>
     </mat-card>
     <hr>
-
+    
     <div class="contain">
       <mat-nav-list class="list" id="list">
         <mat-list-item routerLink="overview" class="item"> 
@@ -37,20 +37,20 @@
         <mat-list-item routerLink="about" class="item"> 
           <mat-icon> help_outline </mat-icon><span class="text"> About </span>
         </mat-list-item>
-        <mat-list-item class="item"> 
+        <mat-list-item routerLink="settings" class="item"> 
           <mat-icon> settings </mat-icon> <span class="text"> Settings </span>
         </mat-list-item>
-        <mat-list-item class="item"> 
+        <mat-list-item routerLink="contact" class="item"> 
           <mat-icon> attach_email </mat-icon> <span class="text"> Contact-Us </span>
         </mat-list-item>
       </mat-nav-list>
     </div>
   </mat-sidenav>
 
-  <mat-sidenav-content [ngStyle]="{'margin-left.px': contentMargin}">
+  <mat-sidenav-content [ngStyle]="{'margin-left.px': contentMargin, 'transition.s':trans}">
     
       
-      <body>
+      
         <div class="cover"> 
     
             <div class="info">
@@ -61,16 +61,15 @@
             <div class="small">
               <p>By Group 27</p>
               </div>
-        </div>   
+        </div>  
           <div class="containe">
               <router-outlet> </router-outlet>  
           
           </div>    
-        </body>
-     
+
+      
     
- 
   </mat-sidenav-content>
 
+</mat-sidenav-container> 
 
-</mat-sidenav-container>

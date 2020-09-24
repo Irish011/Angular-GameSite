@@ -1,0 +1,35 @@
+.container{
+    margin: 5px 5px 15px 5px;
+    color: #8f9cb5;
+    
+}
+.content{
+    padding:  35px 0px;
+    font-size: 20px
+}
+
+.body{
+   overflow: hidden;
+}
+.content1{
+    padding: 35px 16px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+#no{
+    height: 50px;
+width: 50%;
+background-color: #fc7169;
+color:black;
+border-radius: 0px;
+font-size: 17px;
+}
+
+#yes{
+    height: 50px;
+    width: 50%;
+    background-color: #79fa84;
+    color:black;
+    border-radius: 0px;
+    font-size: 17px;
+}

@@ -1,0 +1,41 @@
+body{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    padding:20px;   
+    overflow-x: hidden;
+}
+
+.content, .upcoming{
+    font-weight: bolder;
+    font-size: x-large;
+    width: 50%;
+}
+
+.upcoming{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+mat-icon{
+    margin-top: 15px;
+    font-size:60px;
+}
+#fifa{
+    width: 277px;
+    margin-left: 30px;
+}
+#pc{
+    margin-left: 30px;
+}
+
+#sign{
+    height: 50px;
+width: 15%;
+background-color: #fc7169;
+color:white;
+border-radius: 8px;
+font-size: 25px;
+margin-left: 35%;
+margin-top: 10px;
+}

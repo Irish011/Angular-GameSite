@@ -39,10 +39,10 @@ mat-toolbar{
     color: white;
 }
 
-body{
+mat-sidenav-content{
     height: 100vh;
     background: -webkit-repeating-linear-gradient(-1deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #71b7e6);
-
+    overflow-x: hidden;
 }
 
 .cover{
@@ -60,6 +60,7 @@ body{
 }
 
 .cover .info{
+    position: absolute;
     max-width: 600px;
     text-align: center;
     margin-left: 28%;
@@ -133,4 +134,5 @@ mat-icon{
     margin-top: 14px;
     font-size: 28px;
 }
+
 

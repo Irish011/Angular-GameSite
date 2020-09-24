@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+    position: absolute;
+}
+
+.container{
+    position: relative;
+    width: 1410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card{
+    width: 500px;
+    height: 230px;
+    position: relative;
+    background: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 340px;
+
+}
+
+#logo1{
+    width: 133px;
+    height: 94px;
+    margin-bottom: -7.5px;
+}
+
+#logo3{
+    width: 80px;
+}
+
+#logo{
+    width: 80px;
+    margin-left: 30px;
+}
+
+.names{
+    position: relative;
+    padding: 15px;
+    width: 431px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 600;
+    font-size: x-large;
+    background-color: blueviolet;
+    z-index: 1;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}

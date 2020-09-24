@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamesComponent implements OnInit {
 
+  game1:string="assets/images/tactac.gif";
+  game2:string="assets/images/mine.gif";
+  game3:string="assets/images/sudoku.gif";
+  game4:string="assets/images/ko.gif";
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

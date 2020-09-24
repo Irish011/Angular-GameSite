@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { SettingsComponent } from './settings/settings.component';
 import { OverviewComponent } from './overview/overview.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
 import { GamesComponent } from './games/games.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 
 const routes: Routes = [
   {
     path:'games',
     component:GamesComponent
-  },
-  {
-  path:'home',
-  component:HomeComponent
   },
   {
     path:'overview',
@@ -27,6 +25,14 @@ const routes: Routes = [
   {
     path:'about',
     component:AboutComponent
+  },
+  {
+    path:'settings',
+    component:SettingsComponent
+  },
+  {
+    path:'contact',
+    component:ContactComponent
   }
 ];
 

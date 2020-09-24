@@ -10,7 +10,7 @@ export class AppComponent {
 
   logo:string="assets/images/angularr.png";
 
-  isSideOpen = false;
+  isSideOpen = true;
   hover = false;
   contentMargin=240;
   trans=.8;
@@ -18,14 +18,14 @@ export class AppComponent {
   onToolbarToogle() {
     
     this.isSideOpen=!this.isSideOpen;
-     /*if(this.isSideOpen){
+     if(this.isSideOpen){
       this.contentMargin=240;
     }else{
       this.contentMargin=70;
-    } */
+    } 
     /*if(this.isSideOpen){
       this.hover=!this.hover
     }*/
-    this.contentMargin=240;
+    //this.contentMargin=240;
   }
 }

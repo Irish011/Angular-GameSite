@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogService } from '../dialog.service'
 
 @Component({
   selector: 'app-events',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogService: DialogService) { }
 
   ngOnInit(): void {
   }
-
+  events(){
+    this.dialogService.openConfirmDialog();
+  }
+  signup(){
+    this.dialogService.openForm();
+    }
 }

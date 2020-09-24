@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+}
+
+mat-panel-title{
+    font-size: x-large;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+.second{
+    margin-top: 10%;
+    display: flex;
+}
+
+.third{
+    margin-top: 10%;
+    display: flex;
+}
+
+p{
+    font-weight: 300;
+    text-align: justify;
+    font-size: large;
+}
