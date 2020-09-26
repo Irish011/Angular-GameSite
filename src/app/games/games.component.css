@@ -1,5 +1,6 @@
 body{
-   background-color: #34495e;
+   /*background-color: #34495e;*/
+   background-image: url("src/assets/images/back6.jpg");
    position: absolute;
    width: 100%;
    padding: 0;
@@ -38,7 +39,7 @@ body{
 }
 
 .bar:hover{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 input[name="r"]{

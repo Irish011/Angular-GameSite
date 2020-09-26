@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+//import { HttpService } from '../../http.service';
 
 // import custom validator to validate that password and confirm password fields match
 import { MustMatch } from './_helpers/must-match.validator';
@@ -13,21 +14,26 @@ export class SignUpComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
 
-    constructor(private formBuilder: FormBuilder) { }
+    //nameFormControl = new FormControl("",[Validators.required, Validators.minLength(4)]);
+    //emailFormControl = new FormControl("",[Validators.required, Validators.email]);
+
+    constructor(private formBuilder: FormBuilder, /*public http: HttpService*/) { }
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            title: ['', Validators.required],
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
+            //country: ['', Validators.required],
+            username: ['', Validators.required],
+            Name: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],
-            password: ['', [Validators.required, Validators.minLength(6)]],
-            confirmPassword: ['', Validators.required],
+            confirmemail: ['',[Validators.required, Validators.email]],
+            number: ['', [Validators.required, Validators.minLength(10), Validators.pattern("^[0-9]*$")]],
+            games: ['', Validators.required],
             acceptTerms: [false, Validators.requiredTrue]
         }, {
-            validator: MustMatch('password', 'confirmPassword')
+            validator: MustMatch('email', 'confirmemail')
         });
     }
+
 
     // convenience getter for easy access to form fields
     get f() { return this.registerForm.controls; }
@@ -37,12 +43,35 @@ export class SignUpComponent implements OnInit {
 
         // stop here if form is invalid
         if (this.registerForm.invalid) {
+            console.log("Error is there");
             return;
         }
-
         // display form values on success
-        alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
+        //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
+        alert('We have sent you a mail regarding the details. ');
+        // + JSON.stringify(this.f.Name.value, null ,4)
+        //console.log(`Good ${this.f.Name}`);
+        
     }
+    /*let user={
+            name: this.nameFormControl.value,
+            email: this.emailFormControl.value
+        }
+
+        this.http.sendEmail("http://localhost:3000/sendmail", user).subscribe(
+            data=>{
+                let res:any = data;
+                console.log(`Congrats! ${user.name} is successfully registered `);
+            },
+                err => {
+                    console.log(err);
+                    this.submitted = false;
+                },
+                ()=> {
+                    this.submitted = false;
+                }
+        );
+        */
 
     onReset() {
         this.submitted = false;

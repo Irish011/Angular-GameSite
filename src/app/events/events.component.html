@@ -1,20 +1,26 @@
 <body>
         <div class="content">
             Events/Tournaments Near me:
-        </div>
+        </div><br>
         <div class="icon" (click)="events()">
             <mat-icon>book_online</mat-icon> 
-        </div>
+        </div> <br><br>
 
         <div class="upcoming">
             Upcoming Events/Tournaments:
         </div>
         <div class="img">
+
+                <img id="mine" src="assets/images/tour2.jpg"> 
+                <!--<img id="tictac" src="assets/images/tictactournament.jpg"> <br>-->
+                <img id="sudoku" src="assets/images/tour3.jpg">
+            
             <!--<img src="assets/images/tournaments.jpg">-->
-            <img id="tictac" src="assets/images/tictactournament.jpg">
             <!--<img id="fifa" src="assets/images/fifa2.png">-->
-            <!--<img id="pc" src="assets/images/pc.jpg"> -->
+            
+
+            <!--<img id="pc" src="assets/images/pc.jpg"> mat-flat-button -->
         </div>
         
-        <button mat-flat-button id="sign" (click)="signup()">SIGN UP</button>
+        <button id="sign" (click)="signup()">SIGN UP</button>
 </body>

@@ -37,6 +37,7 @@
 mat-toolbar{
     background-color: #3f4bb8;
     color: white;
+    height: 55px;
 }
 
 mat-sidenav-content{

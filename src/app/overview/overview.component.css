@@ -3,7 +3,8 @@ body{
     width: 100%;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    background: #d9d9da;
+    /*background: #d9d9da;*/
+    background-image: url(src/assets/images/back1.jpg);
     position: absolute;
     overflow: auto;
 }
