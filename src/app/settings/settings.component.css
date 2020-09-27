@@ -3,4 +3,5 @@ body{
     /*background-color: antiquewhite;*/
     background-image: url(src/assets/images/set.png);
     width: 100%;
+    color: black;
 }
