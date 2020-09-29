@@ -21,6 +21,9 @@ import { ContactComponent } from './contact/contact.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { SignUpComponent } from './events/sign-up/sign-up.component';
+import { MinesweeperComponent } from './games/minesweeper/minesweeper.component';
+import { TictactoeComponent } from './games/tictactoe/tictactoe.component';
+import { SudokuComponent } from './games/sudoku/sudoku.component';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import { SignUpComponent } from './events/sign-up/sign-up.component';
     SettingsComponent,
     ConfirmComponent,
     SignUpComponent,
+    MinesweeperComponent,
+    TictactoeComponent,
+    SudokuComponent
 
    
   ],
