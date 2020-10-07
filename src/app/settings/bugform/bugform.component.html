@@ -1,0 +1,41 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="body">
+    <div class="card m-3">
+        <h2 class="card-header">Bug Report Form</h2>
+
+        <div class="card-body">
+            <form [formGroup]="bugForm" (ngSubmit)="OnSubmit()">
+                    <div class="form-group ">
+                        <label>Name: </label>
+                        <input type="text" formControlName="Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Name.errors }" />
+                        <div *ngIf="submitted && f.Name.errors" class="invalid-feedback">
+                            <div *ngIf="f.Name.errors.required">Name is required</div>
+                        </div>
+                    </div>
+       
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Summary of your problem: </label>
+                    <textarea md-maxlength="2500" md-minlength="1" formControlName="Description" class="form-control" [ngClass]="{'is-invalid': submitted && f.Description.errors}" ></textarea>
+                    <div *ngIf="submitted && f.Description.errors" class="invalid-feedback">
+                        <div *ngIf="f.Description.errors.required">Describe your problem</div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button  class="btn btn-primary mr-1">Submit Bug Report</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

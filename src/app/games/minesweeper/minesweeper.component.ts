@@ -19,7 +19,7 @@ export class MinesweeperComponent implements OnInit {
   myBomb(event)
   {
       console.log(this.buttons);
-      event.target.value=[this.b];
+      event.target.value="B";
       alert("Game Over");
       let divbutton = this.buttons.nativeElement;
       //console.log(divbutton.children);

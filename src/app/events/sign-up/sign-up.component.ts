@@ -49,6 +49,7 @@ export class SignUpComponent implements OnInit {
         // display form values on success
         //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
         alert('We have sent you a mail regarding the details. ');
+        this.onReset();
         // + JSON.stringify(this.f.Name.value, null ,4)
         //console.log(`Good ${this.f.Name}`);
         

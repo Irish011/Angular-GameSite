@@ -1,0 +1,103 @@
+body{
+    position: relative;
+    padding: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.header{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.vertical{
+    border-left: 3px solid black;
+    height: 308px;
+    position: absolute;
+    left: 606px;
+    top: 15%;
+}
+.vertical1{
+    left: 706px;
+    border-left: 3px solid black;
+    position: absolute;
+    top: 15%;
+    height: 308px;
+}
+hr{
+    border-top: 3px solid black;
+}
+
+.btn{
+    padding: 10px;
+    margin-left: 33%;
+    margin-right: 35%;
+    text-align: center;
+}
+.button, .bbutton{
+    margin-left: 20px;
+    height: 80px;
+    width: 80px;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+.button:focus{
+    position: relative;
+    background-color: rgb(214, 212, 212);
+    z-index: 1;
+}
+.button:hover{
+    background-color: rgb(201, 201, 201);
+}
+.button:active{
+    background-color: aqua;
+    box-shadow: 0 5px 10px;
+}
+.bbutton:active{
+    box-shadow: 0 5px 10px;
+    background-image: url("src/assets/images/bomb.jpg");
+    background-size: cover;
+}
+
+.reset{
+ 
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color: #f4511e;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  .reset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+  .reset:hover span {
+    padding-right: 25px;
+}
+  
+  .reset:hover span:after {
+    opacity: 1;
+    right: 0;
+}

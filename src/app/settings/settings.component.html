@@ -1,6 +1,32 @@
 <body>
-    <p> Settings</p>
+    <p> Settings</p><br><br>
 
-<mat-slider ></mat-slider>
+<div class="settings">
+    <h3>LightMode/DarkMode</h3> <mat-slide-toggle></mat-slide-toggle>
+    <br><br>
+    <h3>Volume</h3> <mat-slider min="0" max="100" value="100" thumbLabel></mat-slider>
+    <br>
+    <h3>Wifi <mat-icon>wifi</mat-icon></h3> <mat-slide-toggle class="wifi" [checked]=true ></mat-slide-toggle>
+    <br><br>
+    <h3>Bluetooth <mat-icon>bluetooth</mat-icon></h3> <mat-slide-toggle></mat-slide-toggle>
+    <br><br>
+    <h3>Devices <mat-icon>devices</mat-icon></h3> 
+    <mat-radio-button>Laptop</mat-radio-button> <br>
+    <mat-radio-button>Tablet</mat-radio-button> <br>
+    <mat-radio-button>Mobile</mat-radio-button>
+</div>
 
+<div class="settings2">
+    
+    <h3>Max FPS</h3> <mat-slide-toggle></mat-slide-toggle>
+    <br><br>
+    <h3>Auto Rotate <mat-icon>refresh</mat-icon></h3> <mat-slide-toggle></mat-slide-toggle>
+    <br><br>
+    <h3>Last Update - </h3>
+    <br><br>
+    <h3>Bug Report </h3> <mat-icon class="bug" (click)="bug()">bug_report</mat-icon> 
+    <br><br>
+    <h3>License <mat-icon>copyright</mat-icon></h3>
+    <br><br>
+</div>
 </body>

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +26,8 @@ import { SignUpComponent } from './events/sign-up/sign-up.component';
 import { MinesweeperComponent } from './games/minesweeper/minesweeper.component';
 import { TictactoeComponent } from './games/tictactoe/tictactoe.component';
 import { SudokuComponent } from './games/sudoku/sudoku.component';
+import { BugformComponent } from './settings/bugform/bugform.component';
+
 
 
 @NgModule({
@@ -39,7 +43,9 @@ import { SudokuComponent } from './games/sudoku/sudoku.component';
     SignUpComponent,
     MinesweeperComponent,
     TictactoeComponent,
-    SudokuComponent
+    SudokuComponent,
+    BugformComponent,
+   
 
    
   ],
@@ -55,7 +61,9 @@ import { SudokuComponent } from './games/sudoku/sudoku.component';
     MatDialogModule,
     MatExpansionModule,
     ReactiveFormsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent],

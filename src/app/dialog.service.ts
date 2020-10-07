@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { SignUpComponent } from './events/sign-up/sign-up.component';
+import { BugformComponent } from './settings/bugform/bugform.component';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,8 @@ import { SignUpComponent } from './events/sign-up/sign-up.component';
 export class DialogService {
 
   constructor(private dialog:MatDialog,
-    private formlog:MatDialog) { }
+    private formlog:MatDialog,
+    private bugform:MatDialog) { }
   
   openConfirmDialog(){
   this.dialog.open(ConfirmComponent, {
@@ -23,5 +25,10 @@ export class DialogService {
   openForm(){
     console.log("Form");
     this.formlog.open(SignUpComponent);
+  }
+
+  bugForm(){
+    console.log("Bug");
+    this.bugform.open(BugformComponent);
   }
 }

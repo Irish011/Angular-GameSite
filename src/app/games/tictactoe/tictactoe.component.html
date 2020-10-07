@@ -1,1 +1,29 @@
-<p>tictactoe works!</p>
+<body>
+    <div class="header">
+        Tic-Tac-Toe
+        </div>
+    <br><br><br>
+    <div class="btn" id="buttons" #buttons>
+    <input class="button" type="button" id="button1" (click)="myFunction($event)" value=" " name="bt1" #button1>
+    <div class= "vertical"></div>
+    <input class="button" type="button" id="button2" (click)="myFunction($event)" value=" " name="bt2" #button2>
+    
+    <input class="button" type="button" id="button3" (click)="myFunction($event)" value=" " name="bt3" #button3>
+    
+    <hr>
+    <input class="button" type="button" id="button4" (click)="myFunction($event)" value=" " name="bt4" #button4>
+    <input class="button" type="button" id="button5" (click)="myFunction($event)" value=" " name="bt5" #button5>
+    <div class= "vertical1"></div>
+    <input class="button" type="button" id="button6" (click)="myFunction($event)" value=" " name="bt6" #button6>
+    <hr>
+    <input class="button" type="button" id="button7" (click)="myFunction($event)" value=" " name="bt7" #button7>
+    <input class="button" type="button" id="button8" (click)="myFunction($event)" value=" " name="bt8" #button8>
+    <input class="button" type="button" id="button9" (click)="myFunction($event)" value=" " name="bt9" #button9>
+    
+  </div>
+  <br><br>
+  <div id="reset1" #reset1>
+    <!--<input type="reset" (click)="myReset($event)" value="{{e}}" name="reset">-->
+    <button type="reset" class="reset" style="vertical-align:middle" (click)="myReset($event)" value="{{e}}" name="reset"><span>Reset</span></button>
+  </div>
+</body>

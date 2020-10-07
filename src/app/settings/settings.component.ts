@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogService } from '../dialog.service'
 
 @Component({
   selector: 'app-settings',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor( private dialogService: DialogService) { }
 
   ngOnInit(): void {
   }
 
+  bug(){
+    console.log("Working");
+    this.dialogService.bugForm();
+  }
 }
