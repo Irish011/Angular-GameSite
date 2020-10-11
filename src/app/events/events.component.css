@@ -32,6 +32,7 @@ body{
 mat-icon{
     margin-top: 15px;
     font-size:60px;
+    cursor: pointer;
 }
 #tictac{
 margin-left: 10px;
@@ -57,5 +58,6 @@ border-radius: 8px;
 font-size: 25px;
 margin-left: 32%;
 margin-top: 10px;
+cursor: pointer;
 }
 

@@ -17,4 +17,11 @@ export class SettingsComponent implements OnInit {
     console.log("Working");
     this.dialogService.bugForm();
   }
+
+  Dark(){
+    console.log("wORKING");
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    
+  }
 }

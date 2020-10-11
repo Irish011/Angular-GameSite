@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|anaglyph|3d|fire-animation');
 .navigation{
     background-color: #1a1f3b;
     width: 240px;
@@ -74,21 +74,25 @@ mat-sidenav-content{
 
 .cover .info{
     position: absolute;
-    max-width: 600px;
+    width: 100%;
     text-align: center;
-    margin-left: 28%;
-   
+    font-family: Rancho;
+    font-size: x-large;
    
 }
  .info h1{
     font-size: 3em;
     margin-bottom: 20px;
     line-height: 1em;
+    font-family: Rancho;
+    text-align: center;
+    color: rgb(4, 15, 39);
+    
  }
  .info p{
      margin-bottom: 20px;
      font-size: 1.5em;
-     max-width: 600px;
+     width: 100%;
  }
 
  .small{
@@ -96,7 +100,8 @@ mat-sidenav-content{
      font-size: 1.3em;
      margin-top: 380px;
      margin-left: 105px;
- 
+     font-family: Rancho;
+     font-size: x-large;
 }
 
 .space{
@@ -129,7 +134,7 @@ mat-sidenav-content{
 
 .logo{
     width:51px;
-    margin-left:-196px;
+    margin-left:-153px;
     height:46px;
 }
 

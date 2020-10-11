@@ -2,7 +2,8 @@
     <p> Settings</p><br><br>
 
 <div class="settings">
-    <h3>LightMode/DarkMode</h3> <mat-slide-toggle></mat-slide-toggle>
+    
+    <h3>Max FPS</h3> <mat-slide-toggle></mat-slide-toggle>
     <br><br>
     <h3>Volume</h3> <mat-slider min="0" max="100" value="100" thumbLabel></mat-slider>
     <br>
@@ -18,15 +19,16 @@
 
 <div class="settings2">
     
-    <h3>Max FPS</h3> <mat-slide-toggle></mat-slide-toggle>
+    <h3>LightMode/DarkMode</h3> <mat-slide-toggle (toggleChange)="Dark()"></mat-slide-toggle>
     <br><br>
     <h3>Auto Rotate <mat-icon>refresh</mat-icon></h3> <mat-slide-toggle></mat-slide-toggle>
     <br><br>
-    <h3>Last Update - </h3>
+    <h3>Last Update  </h3> 0.0.19.01
     <br><br>
     <h3>Bug Report </h3> <mat-icon class="bug" (click)="bug()">bug_report</mat-icon> 
     <br><br>
     <h3>License <mat-icon>copyright</mat-icon></h3>
     <br><br>
 </div>
-</body>
+</body> 
+
