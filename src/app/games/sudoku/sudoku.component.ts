@@ -10,6 +10,7 @@ export class SudokuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

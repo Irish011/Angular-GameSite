@@ -45,6 +45,8 @@ export class MinesweeperComponent implements OnInit {
         {
           item.disabled=true;
         }
+   this.myReset(event);
+
       }
       // [...divbutton.children].forEach(btn=>btn.value='0');
       
@@ -85,6 +87,7 @@ export class MinesweeperComponent implements OnInit {
   {
     event.target.value="S";
     this.p=this.p+1;
+
     if(this.p>=49)
   {
     alert('You win'); 
@@ -125,5 +128,7 @@ export class MinesweeperComponent implements OnInit {
         }   
     }
   }
+
+
 
 

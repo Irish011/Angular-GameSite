@@ -2,6 +2,9 @@
     <div class="container">
         <!--<mat-icon id="close">close</mat-icon>-->
         <span class="content">There are No Events or Tournaments near you right now :(</span> <br><br>
+        <div class="timer"> <p><i><b>Next Event in: </b></i></p>
+            <countdown [config]="{ leftTime: 21600, format: 'hh:m:s' }"></countdown> (HH/MM/SS)
+            </div><br>
         <span class="content1">Want to Go back to Main Screen?</span> 
     </div>
     <button mat-flat-button id="yes" [mat-dialog-close] routerLink="../">YES</button>

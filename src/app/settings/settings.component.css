@@ -8,6 +8,15 @@ body{
     color: black;
 }
 
+.my-tooltip{
+    font-size: xx-large;
+    white-space: pre;
+}
+
+.license{
+    max-width: fit-content;
+    cursor: pointer;
+}
 .settings{
     margin-left: 5%;
     width: 40%;

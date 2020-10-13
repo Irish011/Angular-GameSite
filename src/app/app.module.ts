@@ -4,6 +4,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 
+import{ MatTooltipModule } from '@angular/material/tooltip';
+import { CountdownModule } from 'ngx-countdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -51,6 +53,7 @@ import { BugformComponent } from './settings/bugform/bugform.component';
   ],
   imports: [
     BrowserModule,
+    MatTooltipModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
@@ -63,7 +66,9 @@ import { BugformComponent } from './settings/bugform/bugform.component';
     ReactiveFormsModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatRadioModule
+    MatRadioModule,
+    CountdownModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

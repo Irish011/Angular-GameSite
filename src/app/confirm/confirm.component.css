@@ -1,7 +1,8 @@
 .container{
     
-    color: #8f9cb5;
-    
+   /* color: #8f9cb5;
+    */
+    color:  rgba(0, 0, 0, 0.9);
 }
 .content{
     padding:  35px 0px;
@@ -32,4 +33,9 @@ font-size: 17px;
     color:black;
     border-radius: 0px;
     font-size: 17px;
+}
+.timer{
+    font-size: x-large;
+    margin-bottom: 5px;
+    color: black;
 }

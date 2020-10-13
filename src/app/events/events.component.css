@@ -61,3 +61,12 @@ margin-top: 10px;
 cursor: pointer;
 }
 
+.timer{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.day{
+    font-size: x-large;
+    margin-top: 5px;
+}
