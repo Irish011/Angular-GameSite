@@ -5,182 +5,190 @@
         Sudoku
     </div>
    
-    <table id="buttons" #buttons class="table">
-        <tr>  
-            <td>
-                <table class="table">
-                    <tr>
-                       <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
-                       <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td> 
-                       <td> <input type="text" maxlength="1" name="4" class="text"> </td>   
-                    </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                    </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" name="1" class="text"> </td>
-                      <td> <input type="text" maxlength="1" value="9" readonly class="text1">  </td>
-                      <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
-                    </tr>
-                 </table>
-            </td>  
-            <td>
-                <table class="table">
-                     <tr>
-                       <td> <input type="text" maxlength="1" name="6" class="text"> </td>
-                       <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
-                       <td> <input type="text" maxlength="1" name="8" class="text"> </td>
-                     </tr>
-                     <tr>
-                       <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
-                       <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
-                       <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
-                     </tr>
-                     <tr>
-                       <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                       <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-                       <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                     </tr> 
-                </table>
-            </td>
-            <td>
-                <table class="table">
-                    <tr>
-                      <td> <input type="text" maxlength="1" name="9" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="1" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                    </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="8" class="text"> </td>  
-                    </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                      <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-                    </tr>  
-                  </table>
-            </td>
-      </tr>
-      <tr>
+    <table class="table">
+      <tr>  
           <td>
               <table class="table">
                   <tr>
-                      <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="9" class="text"> </td>
+                     <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
+                     <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td> 
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_1" class="text"> </td>   
                   </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" value="4" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="6" class="text"> </td>
-                    </tr>
-                    <tr>
-                      <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="1" class="text"> </td>
-                      <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                    </tr>
+                  <tr>
+                    <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_1" class="text"> </td>
+                  </tr>
+                  <tr>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" value="9" readonly class="text1">  </td>
+                    <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
+                  </tr>
+               </table>
+          </td>  
+          <td>
+              <table class="table">
+                   <tr>
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my6_1" class="text"> </td>
+                     <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my8_1" class="text"> </td>
+                   </tr>
+                   <tr>
+                     <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
+                     <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
+                     <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
+                   </tr>
+                   <tr>
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_1" class="text"> </td>
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_2" class="text"> </td>
+                     <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_2" class="text"> </td>
+                   </tr> 
               </table>
           </td>
           <td>
-               <table class="table">
+              <table class="table">
                   <tr>
-                      <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-                      <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
-                      <td> <input type="text" maxlength="1" name="1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my9_1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_2" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_3" class="text"> </td>
                   </tr>
                   <tr>
-                    <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
-                    <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                    <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_2" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_3" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my8_2" class="text"> </td>  
                   </tr>
                   <tr>
-                    <td> <input type="text" maxlength="1" name="9" class="text"> </td>
-                    <td> <input type="text" maxlength="1" value="2" readonly class="text1"> </td>
-                    <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-                  </tr>
-               </table> 
-          </td>
-          <td>
-                <table class="table">
-                  <tr>
-                    <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-                    <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                    <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td>
-                  </tr>
-                  <tr>
-                    <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-                    <td> <input type="text" maxlength="1" name="9" class="text"> </td>
-                    <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
-                  </tr>
-                  <td> <input type="text" maxlength="1" name="8" class="text"> </td>
-                  <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                  <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_2" class="text"> </td>
+                  </tr>  
                 </table>
           </td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
         <td>
             <table class="table">
                 <tr>
-                  <td> <input type="text" maxlength="1" name="9" class="text"> </td>
-                  <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
-                  <td> <input type="text" maxlength="1" name="1" class="text"> </td>
+                    <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_2" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my9_2" class="text"> </td>
                 </tr>
-                <tr>
-                  <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                  <td> <input type="text" maxlength="1" name="8" class="text"> </td>
-                  <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-                </tr>
-                <tr>
-                  <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                  <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-                  <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                </tr>
+                  <tr>
+                    <td> <input type="text" maxlength="1" value="4" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_4" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my6_2" class="text"> </td>
+                  </tr>
+                  <tr>
+                    <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_3" class="text"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_3" class="text"> </td>
+                  </tr>
             </table>
         </td>
         <td>
-            <table class="table">
-              <tr>
-                <td> <input type="text" maxlength="1" name="5" class="text"> </td>
-                <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                <td> <input type="text" maxlength="1" name="7" class="text"> </td>
-              </tr>
-              <tr>
-                <td> <input type="text" maxlength="1" value="4" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
-              </tr>
-              <tr>
-                <td> <input type="text" maxlength="1" name="2" class="text"> </td>
-                <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" name="6" class="text"> </td>
-              </tr>
-            </table>
+             <table class="table">
+                <tr>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_3" class="text"> </td>
+                    <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+                    <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_4" class="text"> </td>
+                </tr>
+                <tr>
+                  <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_3" class="text"> </td>
+                  <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td>
+                </tr>
+                <tr>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my9_3" class="text"> </td>
+                  <td> <input type="text" maxlength="1" value="2" readonly class="text1"> </td>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_4" class="text"> </td>
+                </tr>
+             </table> 
         </td>
         <td>
-            <table class="table">
-              <tr>
-                <td> <input type="text" maxlength="1" value="2" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" name="4" class="text"> </td>
-              </tr>
-              <tr>
-                <td> <input type="text" maxlength="1" name="6" class="text"> </td>
-                <td> <input type="text" maxlength="1" name="3" class="text"> </td>
-                <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
-              </tr>
-              <tr>
-                <td> <input type="text" maxlength="1" name="1" class="text"> </td>
-                <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
-                <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
-              </tr>
-            </table>
+              <table class="table">
+                <tr>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_5" class="text"> </td>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_5" class="text"> </td>
+                  <td> <input type="text" maxlength="1" value="3" readonly class="text1"> </td>
+                </tr>
+                <tr>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_4" class="text"> </td>
+                  <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my9_4" class="text"> </td>
+                  <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
+                </tr>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my8_3" class="text"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_4" class="text"> </td>
+                <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+              </table>
         </td>
-      </tr>      
-    </table>
+    </tr>
+    <tr>
+      <td>
+          <table class="table">
+              <tr>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my9_5" class="text"> </td>
+                <td> <input type="text" maxlength="1" value="6" readonly class="text1"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_5" class="text"> </td>
+              </tr>
+              <tr>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_6" class="text"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my8_4" class="text"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_5" class="text"> </td>
+              </tr>
+              <tr>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_4" class="text"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_6" class="text"> </td>
+                <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_5" class="text"> </td>
+              </tr>
+          </table>
+      </td>
+      <td>
+          <table class="table">
+            <tr>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my5_6" class="text"> </td>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_5" class="text"> </td>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my7_6" class="text"> </td>
+            </tr>
+            <tr>
+              <td> <input type="text" maxlength="1" value="4" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" value="1" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
+            </tr>
+            <tr>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my2_7" class="text"> </td>
+              <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my6_3" class="text"> </td>
+            </tr>
+          </table>
+      </td>
+      <td>
+          <table class="table">
+            <tr>
+              <td> <input type="text" maxlength="1" value="2" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" value="8" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my4_7" class="text"> </td>
+            </tr>
+            <tr>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my6_4" class="text"> </td>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my3_6" class="text"> </td>
+              <td> <input type="text" maxlength="1" value="5" readonly class="text1"> </td>
+            </tr>
+            <tr>
+              <td> <input type="text" maxlength="1" (keypress)="myFunction()" [(ngModel)]="my1_6" class="text"> </td>
+              <td> <input type="text" maxlength="1" value="7" readonly class="text1"> </td>
+              <td> <input type="text" maxlength="1" value="9" readonly class="text1"> </td>
+            </tr>
+          </table>
+      </td>
+      </tr> 
+  </table>
+      <br>
+      <div class="winner" id="reset1" #reset1>
+        <button class="winner" type="button" value={{a}} (click)="myCheckWinner()" style="vertical-align: middle;"><span>Check Winner</span></button>
+      </div>
+       
+      <div id="reset1" #reset1>
+      <button type="reset" class="reset" style="vertical-align:middle" (click)="myReset()" value={{b}}><span>Reset</span></button>
+      </div>
       
     </body>

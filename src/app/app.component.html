@@ -16,7 +16,9 @@
   <mat-card class="card">
   <mat-card-header>
    
-      <div><img class="logo" [src]=logo> </div> <!-- <div class="container"> --><mat-card-title class="welcomee">Guest</mat-card-title>
+      <div class="logo"><img class="logo" [src]=logo> </div> <!-- <div class="container"> --><div class="title"> <mat-card-title class="welcomee">{{name}}
+        <mat-card-subtitle class="subtitle">@{{uname}}</mat-card-subtitle>
+      </mat-card-title> </div>
   
       <!--<span class="header">Welcome</span>-->
     </mat-card-header>

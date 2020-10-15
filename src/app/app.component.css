@@ -24,13 +24,14 @@
 .btn{
     width: 0px;
     margin-top: 4px;
-    padding-left: 195px;   
+    padding-left: 195px;  
 }
 
 .card{
     background-color: #1a1f3b;
     color: white;
     border: none;
+   
 }
 .item{
     color: white;
@@ -133,9 +134,18 @@ mat-sidenav-content{
 }
 
 .logo{
-    width:51px;
-    margin-left:-153px;
-    height:46px;
+    width:67px;
+    margin-left:-15px;
+    height:56px;
+    float: left;
+    position: fixed;
+    margin-top: 2px;
+}
+
+.title{
+    float: right;
+    margin-bottom: -17px;
+    
 }
 
 mat-icon{
@@ -145,12 +155,21 @@ mat-icon{
 
 .header{
     position: relative;
+   
 }
 
 .welcomee{
     margin-left: 26px;
     margin-top: 14px;
-    font-size: 28px;
+    font-size: 35px;
+    margin-left: 12px;
+    
+}
+.subtitle{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, .7);
+    font-size: medium;
 }
 
 

@@ -37,7 +37,7 @@ hr{
     margin-right: 35%;
     text-align: center;
 }
-.button, .bbutton{
+.button{
     margin-left: 20px;
     height: 80px;
     width: 80px;
@@ -60,11 +60,6 @@ hr{
 .button:active{
     background-color: aqua;
     box-shadow: 0 5px 10px;
-}
-.bbutton:active{
-    box-shadow: 0 5px 10px;
-    background-image: url("src/assets/images/bomb.jpg");
-    background-size: cover;
 }
 
 .reset{

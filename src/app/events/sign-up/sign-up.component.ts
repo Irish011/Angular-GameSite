@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 //import { HttpService } from '../../http.service';
-
+import{ InteractService } from '../../interact.service';
 // import custom validator to validate that password and confirm password fields match
 import { MustMatch } from './_helpers/must-match.validator';
 
@@ -13,11 +13,12 @@ import { MustMatch } from './_helpers/must-match.validator';
 export class SignUpComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
+    a:string;
 
     //nameFormControl = new FormControl("",[Validators.required, Validators.minLength(4)]);
     //emailFormControl = new FormControl("",[Validators.required, Validators.email]);
 
-    constructor(private formBuilder: FormBuilder, /*public http: HttpService*/) { }
+    constructor(private formBuilder: FormBuilder, private service: InteractService /*public http: HttpService*/) { }
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
@@ -46,6 +47,9 @@ export class SignUpComponent implements OnInit {
             console.log("Error is there");
             return;
         }
+
+        this.service.sendUsername(this.f.username.value);
+        this.service.sendMessage(this.f.Name.value);
         // display form values on success
         //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
         alert('We have sent you a mail regarding the details. ');

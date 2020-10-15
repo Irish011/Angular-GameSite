@@ -29,7 +29,7 @@ import { MinesweeperComponent } from './games/minesweeper/minesweeper.component'
 import { TictactoeComponent } from './games/tictactoe/tictactoe.component';
 import { SudokuComponent } from './games/sudoku/sudoku.component';
 import { BugformComponent } from './settings/bugform/bugform.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -65,6 +65,7 @@ import { BugformComponent } from './settings/bugform/bugform.component';
     MatExpansionModule,
     ReactiveFormsModule,
     MatSliderModule,
+    FormsModule,
     MatSlideToggleModule,
     MatRadioModule,
     CountdownModule,

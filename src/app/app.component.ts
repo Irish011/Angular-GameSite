@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SignUpComponent } from './events/sign-up/sign-up.component';
+import { InteractService } from '../app/interact.service';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,30 @@ export class AppComponent {
   title = 'Project-Sidebar';
 
   logo:string="assets/images/angularr.png";
+  name:string = "Guest";
+  uname:string = "guest";
 
   isSideOpen = true;
   hover = false;
   contentMargin=240;
   trans=.8;
+
+  constructor(private service:InteractService){}
+    ngOnInit(){
+      
+      this.service.message$.subscribe(
+        message => {
+          this.name = message;
+        }
+      );
+
+      this.service.message2$.subscribe(
+        message2 => {
+          this.uname = message2;
+        }
+      );
+  }
+
 
   onToolbarToogle() {
     
